@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex Watch</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                       robot:['robot','serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-[#1F1F1F]">
+    <div class="bg-[#1F1F1F] px-3 ">
+
+        <!-- header -->
+        <header class="px-10 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-10">
+                    <img src="./images/Logo header.svg" alt="logo" class="h-4 w-16 object-cover " />
+                    <nav class="hidden md:flex justify-between items-center gap-10 text-white text-sm roboto-medium">
+
+                        <a href="#home" class="hover:text-[#FFB568] transition-all duration-300">Home</a>
+                        <a href="#featured" class="hover:text-[#FFB568] transition-all duration-300">Featured</a>
+                        <a href="#products" class="hover:text-[#FFB568] transition-all duration-300">Products</a>
+                        <a href="#new" class="hover:text-[#FFB568] transition-all duration-300">New</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-5">
+
+                    <div class="hidden lg:flex gap-4 relative z-20 right-20 ">
+                        <img src="./images/bx-sun.svg.svg" alt="sun"
+                            class="h-5 w-5 object-cover bg-[#BFBFBF] hover:bg-[#EFBE8A] cursor-pointer hover:scale-105 transition-all duration-300 p-1 rounded" />
+                        <img src="./images/bx-shopping-bag.svg.svg" alt="cart"
+                            class="h-5 w-5 object-cover bg-[#BFBFBF] hover:bg-[#EFBE8A] cursor-pointer hover:scale-105 transition-all duration-300 p-1 rounded" />
+                    </div>
+
+
+                    <div class="lg:hidden">
+                        <img src="/burgersite/images/hamburger.svg" alt="hamburger"
+                            class="h-7 w-6 bg-[#BFBFBF] p-1 rounded cursor-pointer" />
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- home -->
+        <section
+            class=" flex flex-col gap-5 md:gap-10 md:flex-row justify-center items-center md:px-10 md:py-10 relative"
+            id="home">
+
+            <!-- social links -->
+            <div class="hidden text-white  md:flex flex-col justify-center items-center gap-20">
+                <h3
+                    class="cursor-pointer hover:scale-105 transition-all duration-300 font-robot font-normal text-sm text-[#8C8C8C] -rotate-90">
+                    Twitter</h3>
+                <h3
+                    class="cursor-pointer hover:scale-105 transition-all duration-300  font-robot font-normal text-sm text-[#8C8C8C] -rotate-90">
+                    instagram</h3>
+                <h3
+                    class="cursor-pointer hover:scale-105 transition-all duration-300  font-robot font-normal text-sm text-[#8C8C8C] -rotate-90">
+                    Facebook</h3>
+            </div>
+
+            <!-- text area -->
+            <div class="text-white space-y-2 md:space-y-5 max-w-md">
+                <h3 class="font-robot font-bold text-xl md:text-2xl lg:text-4xl  leading-tight ">NEW WATCH COLLECTIONS
+                    B720</h3>
+                <p class="text-[#BFBFBF] font-robot text-base ">Latest arrival of the new imported watches of the B720
+                    series, with a modern and resistant design.</p>
+                <p class="text-[#EFBE8A] font-robot tezt-base md:text-lg font-medium">$1245</p>
+
+                <div class="flex gap-4">
+                    <button
+                        class="py-2 px-5 font-robot font-medium text-base bg-[#BFBFBF] hover:bg-[#3D3D3D] hover:backdrop-blur-sm transition-all duration-500 cursor-pointer ">Discover</button>
+                    <button
+                        class="py-2 px-5 font-robot font-medium text-base bg-[#BFBFBF] hover:bg-[#3D3D3D] hover:backdrop-blur-sm transition-all duration-500 cursor-pointer ">Add
+                        to cart</button>
+                </div>
+            </div>
+
+            <!-- watch img -->
+            <div
+                class="bg-[#EFBE8A] rounded-md relative lg:-top-28 h-[250px] w-full  md:h-[400px] md:w-full  lg:h-[500px] lg:w-[350px] flex justify-center items-end md:mx-3 md:my-5">
+                <img src="./images/homeimg1.png" alt="watch"
+                    class="h-[250px] md:h-[350px] lg:h-[400px] w-auto object-cover mb-5 pt-5 " />
+            </div>
+        </section>
+
+        <!-- feature    -->
+
+        <section class="mt-5 md:py-10 md:px-5 bg-[#1F1F1F]" id="featured">
+
+            <div class="flex justify-center items-center mb-5 md:mb-10 ">
+                <div class="text-center">
+                    <div class="border-t-[2px] w-16 mx-auto border-[#EFBE8A] mb-2"></div>
+                    <h3 class=" text-white font-robot font-medium text-xl tracking-wide">FEATURED</h3>
+                </div>
+            </div>
+
+            <!-- product cards -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5 justify-center items-center md:px-10">
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 transition-all duration-300">
+                    <span
+                        class="absolute top-4  bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase -rotate-90">sale</span>
+                    <img src="./images/featuredimg1.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white font-robot font-semibold text-center mt-2 md:mt-4">JAZZMASTER</h4>
+                    <p class="text-[#EFBE8A] text-center font-medium mt-2">$1050</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100  cursor-pointer bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 transition-all duration-300">
+                    <span
+                        class="absolute top-4  bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase -rotate-90">sale</span>
+                    <img src="./images/featuredimg2.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white font-robot font-semibold text-center mt-2 md:mt-4">INGERSOLL</h4>
+                    <p class="text-[#EFBE8A] text-center font-medium mt-2">$250</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100  cursor-pointer bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 transition-all duration-300">
+                    <span
+                        class="absolute top-4  bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase -rotate-90">sale</span>
+                    <img src="./images/featuredimg3.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white font-robot font-semibold text-center mt-2 md:mt-4">ROSE GOLD</h4>
+                    <p class="text-[#EFBE8A] text-center font-medium mt-2">$890</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 cursor-pointer  bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our story -->
+
+        <section
+            class="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10  md:py-10 md:px-16 bg-[#1F1F1F] my-10">
+
+            <!-- img -->
+            <div class="relative flex justify-center items-center w-full md:w-1/2 ">
+                <div
+                    class="absolute   h-[200px] w-[200px]  md:top-10 md:left-2 lg:top-10 lg:left-2 lg:h-[300px] lg:w-[300px] xl:top-15 xl:left-20 bg-[#EFBE8A] z-0">
+                </div>
+                <div class="h-[200px] w-[200px] lg:h-[300px] lg:w-[300px] relative z-10  bg-black ">
+                    <img src="./images/ourstoryimg1.png" alt="watch" class="object-cover " />
+                </div>
+            </div>
+
+            <!-- text area -->
+            <div class="w-full md:w-1/2 text-left ">
+                <div class="flex justify-center items-center md:mb-10 ">
+                    <div class="text-white space-y-2 md:space-y-5">
+                        <div class="border-t-[2px] w-16  border-[#EFBE8A] mb-2"></div>
+                        <h3 class=" font-robot font-medium text-lg md:text-xl tracking-wide">OUR STORY</h3>
+                        <h4
+                            class="font-robot font-medium tracking-tight text-[#F2F2F2] leading-tight text-xl md:text-4xl">
+                            Inspirational Watch of this year</h4>
+                        <p class="font-robot font-normal text-[#BFBFBF]">The latest and modern watches of this year, is
+                            available in various presentations in this store, discover them now.</p>
+                        <button
+                            class="py-2 px-5 font-robot font-medium text-base bg-[#BFBFBF] hover:bg-[#3D3D3D] hover:backdrop-blur-sm transition-all duration-500 cursor-pointer ">Discover</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- products -->
+
+        <section class="bg-[#1F1F1F] mt-5 md:mt-20" id="products">
+
+            <!-- heading -->
+            <div class="flex justify-center items-center mb-5 md:mb-10 ">
+                <div class="text-center">
+                    <div class="border-t-[2px] w-16 mx-auto border-[#EFBE8A] mb-2"></div>
+                    <h3 class=" text-white font-robot font-medium text-xl tracking-wide">PRODUCTS</h3>
+                </div>
+            </div>
+
+            <!-- img cards -->
+            <div class="flex flex-col flex-wrap sm:flex-row justify-start items-center gap-5 md:px-10 md:gap-10">
+                <div class=" text-white space-y-3 bg-[#292929] w-[250px] h-[300px] cursor-pointer ">
+                    <img src="./images/product-img1.png" alt="watch" class="object-cover h-[150px] w-[100px] mx-auto my-5 " />
+                    <h3 class="font-robot font-medium text-base md:text-xl text-center">SPIRIT ROSE</h3>
+                    <p class="font-robot font-medium text-center   text-[#EFBE8A]">$1500</p>
+                    <div class="flex justify-end">
+                        <img src="./images/Button product img.png" alt="Button"
+                            class="object-contain h-7 cursor-pointer hover:scale-75 transition-all duration-300" />
+                    </div>
+                </div>
+                <div class=" text-white space-y-3 bg-[#292929] w-[250px] h-[300px] cursor-pointer ">
+                    <img src="./images/product-img2.png" alt="watch" class="object-cover  h-[150px] w-[100px] mx-auto my-5 " />
+                    <h3 class="font-robot font-medium text-base md:text-xl text-center">KHAKI PILOT</h3>
+                    <p class="font-robot font-medium text-center text-[#EFBE8A]">$1350</p>
+                    <div class="flex justify-end">
+                        <img src="./images/Button product img.png" alt="Button"
+                            class="object-contain h-7 cursor-pointer hover:scale-75 transition-all duration-300" />
+                    </div>
+                </div>
+                <div class=" text-white space-y-3 bg-[#292929] w-[250px] h-[300px] cursor-pointer ">
+                    <img src="./images/product-img3.png" alt="watch" class="object-cover h-[150px] w-[100px] mx-auto my-5  " />
+                    <h3 class="font-robot font-medium text-base md:text-xl text-center">JUBILEE BLACK</h3>
+                    <p class="font-robot font-medium text-center text-[#EFBE8A]">$870</p>
+                    <div class="flex justify-end">
+                        <img src="./images/Button product img.png" alt="Button"
+                            class="object-contain h-7 cursor-pointer hover:scale-75 transition-all duration-300" />
+                    </div>
+                </div>
+                <div class=" text-white space-y-3 bg-[#292929] w-[250px] h-[300px] cursor-pointer ">
+                    <img src="./images/product-img4.png" alt="watch" class="object-cover h-[150px] w-[100px] mx-auto my-5  " />
+                    <h3 class="font-robot font-medium text-base md:text-xl text-center">FOSIL ME3</h3>
+                    <p class="font-robot font-medium text-center text-[#EFBE8A]">$650</p>
+                    <div class="flex justify-end">
+                        <img src="./images/Button product img.png" alt="Button"
+                            class="object-contain h-7 cursor-pointer hover:scale-75 transition-all duration-300" />
+                    </div>
+                </div>
+                <div class=" text-white space-y-3 bg-[#292929] w-[250px] h-[300px] cursor-pointer ">
+                    <img src="./images/product-img5.png" alt="watch" class="object-cover  h-[150px] w-[100px] mx-auto my-5 " />
+                    <h3 class="font-robot font-medium text-base md:text-xl text-center">DUCHEN</h3>
+                    <p class="font-robot font-medium text-center text-[#EFBE8A]">$950</p>
+                    <div class="flex justify-end">
+                        <img src="./images/Button product img.png" alt="Button"
+                            class="object-contain h-7 cursor-pointer hover:scale-75 transition-all duration-300" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- director -->
+        <section
+            class="flex flex-col md:flex-row items-center justify-center gap-10 my-10 md:my-20  md:px-20 bg-[#1F1F1F] ">
+
+            <!-- text -->
+            <div class="text-white space-y-2 md:space-y-5 w-full md:w-1/2 ">
+                <img src="./images/quotation.png" alt="quotation" class="object-cover " />
+                <p class="font-robot font-normal text-[#BFBFBF]">They are the best watches that one acquires, also they
+                    are always with the latest news and trends, with a very comfortable price and especially with the
+                    attention you receive, they are always attentive to your questions.</p>
+                <span class="font-robot font-medium text-[#F2F2F2]">March 27. 2021</span>
+
+                <div class="flex items-center gap-3 mt-5">
+                    <img src="./images/director.jpg" alt="director" class="object-cover rounded-full h-10 w-10" />
+                    <div>
+                        <h3 class="font-robot font-medium text-[#F2F2F2]">Lee Doe</h3>
+                        <p class="text-[#BFBFBF] font-robot font-normal">Director of a company</p>
+                    </div>
+                </div>
+                <img src="./images/Arrows testimonial.png" alt="Arrows" class="cursor-pointer">
+            </div>
+
+            <!-- img part -->
+            <div class="relative flex justify-center items-center w-full md:w-1/2 ">
+                <div class="relative z-10  h-[200px] w-[200px]  lg:h-[300px] lg:w-[300px]  bg-[#EFBE8A] "></div>
+                <div
+                    class="absolute z-20 h-[200px] w-[200px] top-10 left-8  md:top-10 md:left-1 lg:h-[300px] lg:w-[300px] xl:top-15 xl:left-15  bg-black ">
+                    <img src="./images/product-img6.png" alt="watch" class="object-cover " />
+                </div>
+            </div>
+
+        </section>
+
+        <!-- new arrivals -->
+
+        <section class="bg-[#1F1F1F] mt-5 md:mt-20" id="new">
+
+            <!-- heading -->
+            <div class="flex justify-center items-center mb-5 md:mb-10 ">
+                <div class="text-center">
+                    <div class="border-t-[2px] w-16 mx-auto border-[#EFBE8A] my-2"></div>
+                    <h3 class=" text-white font-robot font-medium text-xl tracking-wide">NEW ARRIVALS</h3>
+                </div>
+            </div>
+
+            <!-- img cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5 justify-center items-center md:px-10">
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 hover:bg-[#EFBE8A] transition-all duration-300">
+                    <span
+                        class="absolute top-4 right-0 group-hover:bg-[#3D3D3D] group-hover:text-white bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase ">new</span>
+                    <img src="./images/featuredimg1.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white group-hover:text-black font-robot font-semibold text-center mt-2 md:mt-4">
+                        JAZZMASTER</h4>
+                    <p class="text-[#EFBE8A] group-hover:text-black text-center font-medium mt-2">$1050</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100  cursor-pointer bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 hover:bg-[#EFBE8A] transition-all duration-300">
+                    <span
+                        class="absolute top-4 right-0 group-hover:bg-[#3D3D3D] group-hover:text-white bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase">new</span>
+                    <img src="./images/featuredimg2.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white group-hover:text-black font-robot font-semibold text-center mt-2 md:mt-4">
+                        INGERSOLL</h4>
+                    <p class="text-[#EFBE8A] group-hover:text-black text-center font-medium mt-2">$250</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100  cursor-pointer bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 hover:bg-[#EFBE8A] transition-all duration-300">
+                    <span
+                        class="absolute top-4 right-0 group-hover:bg-[#3D3D3D] group-hover:text-white bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase">new</span>
+                    <img src="./images/featuredimg3.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white group-hover:text-black font-robot font-semibold text-center mt-2 md:mt-4">
+                        DREYFUSS GOLD</h4>
+                    <p class="text-[#EFBE8A] group-hover:text-black text-center font-medium mt-2">$750</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 cursor-pointer  bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+                <div
+                    class="relative bg-[#2A2A2A] group cursor-pointer  max-w-xs hover:scale-105 hover:bg-[#EFBE8A] transition-all duration-300">
+                    <span
+                        class="absolute top-4 right-0 group-hover:bg-[#3D3D3D] group-hover:text-white bg-[#EFBE8A] text-xs font-robot font-semibold px-2 py-1 uppercase">new</span>
+                    <img src="./images/featuredimg3.png" alt="watch" class="mx-auto p-5 h-48 object-cover " />
+
+                    <h4 class="text-white group-hover:text-black font-robot font-semibold text-center mt-2 md:mt-4">
+                        PORTUGUESE ROSE</h4>
+                    <p class="text-[#EFBE8A] group-hover:text-black text-center font-medium mt-2">$1590</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="md:invisible md:opacity-0 group-hover:visible group-hover:opacity-100 cursor-pointer  bg-[#BFBFBF] font-robot font-medium px-4 py-2 transition-all duration-300">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscribe -->
+        <section class="bg-[#1F1F1F] my-10 md:my-20">
+
+            <!-- text -->
+            <div class="bg-[#EFBE8A] flex flex-col md:flex-row justify-center items-center gap-5 py-5 md:py-10">
+                <div class="space-y-5 w-full md:w-1/2 p-2 ">
+                    <h3
+                        class="font-robot font-medium text-xl md:text-4xl text-[#2E2E2E] tracking-wide leading-tight max-w-sm">
+                        Subscribe Our Newsletter</h3>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#595959] max-w-sm">Don't miss out on
+                        your discounts. Subscribe to our email newsletter to get the best offers, discounts, coupons,
+                        gifts and much more.</p>
+                </div>
+                <div class="flex">
+                    <input type="email" id="email" placeholder="Enter Your Email"
+                        class="placeholder-[#8C8C8C] border-none  bg-[#F0F0F0] px-1 md:px-3 py-2" />
+                    <button type="submit"
+                        class="uppercase px-1 md:px-3 py-2 bg-[#3D3D3D] hover:bg-[#171717] transition-all duration-300 text-white font-robot font-medium text-sm md:text-base cursor-pointer">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="bg-[#1F1F1F] my-5">
+            <div class="text-white flex flex-wrap justify-start gap-10 px-5 md:px-10">
+                <div class="cursor-pointer">
+                    <h4 class="font-robot font-medium text-base md:text-xl mb-2 md:mb-4">Our information</h4>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">1234 - Peru</p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">La Libertad 43210
+                    </p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">123-456-789</p>
+                </div>
+                <div class="cursor-pointer">
+                    <h4 class="font-robot font-medium text-base md:text-xl mb-2 md:mb-4">About Us</h4>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Support Center
+                    </p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Customer Support
+                    </p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">About Us</p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Copy Right</p>
+                </div>
+                <div class="cursor-pointer">
+                    <h4 class="font-robot font-medium text-base md:text-xl mb-2 md:mb-4">Product</h4>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Road bikes</p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Mountain bikes
+                    </p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Electric</p>
+                    <p class="font-robot font-normal text-sm md:text-base text-[#BFBFBF] mb-1 md:mb-2">Accesories</p>
+                </div>
+                <div class="flex flex-col items-center  cursor-pointer ">
+                    <h4 class="font-robot font-medium text-base md:text-xl mb-2 md:mb-4">Social</h4>
+                    <div class=" flex gap-3">
+                        <img src="/Teapoz/images/facebook.png" alt="fb"
+                            class="h-5 rounded-full object-cover cursor-pointer " />
+                        <img src="/Teapoz/images/instagram.png" alt="insta"
+                            class="h-5 rounded-full object-cover cursor-pointer" />
+                        <img src="/Teapoz/images/twitter.png" alt="twitter"
+                            class="h-5 rounded-full object-cover cursor-pointer" />
+                    </div>
+                </div>
+            </div>
+            <hr class="text-[#333333] w-[80%] mx-auto mt-5 md:mt-10">
+            <p class="text-[#8C8C8C] text-center font-robot font-normal text-sm mt-5 md:mt-10">&copy; Bedimcode. All
+                rigths reserved</p>
+
+        </section>
+    </div>
+</body>
+
+</html>
